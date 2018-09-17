@@ -41,7 +41,6 @@
   width: 50px;
   margin-top: 7px;
 }
-
 .portfolio-navigation-row {
   background-color: rgba(0, 0, 0, 0.08);
   text-transform: uppercase;
@@ -228,4 +227,66 @@ footer {
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   background-color: #f1f1f1;
+}
+
+#options{
+  grid-template-columns: 50% 1fr;
+  display: inline-grid;
+  grid-gap: 1px;
+}
+
+.mdl-button {
+    background: 0 0;
+    border: none;
+    border-radius: 2px;
+    color: #000;
+    position: relative;
+    height: 36px;
+    margin: 0;
+    width: 100%;
+    min-width: 64px;
+    display: inline;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    overflow: hidden;
+    will-change: box-shadow;
+    transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    line-height: 36px;
+    vertical-align: middle;
+}
+
+.options{
+  text-decoration: none;
+  background: #b0b0b0;
+}
+
+#disciplinasButton:hover, #cursosButton:hover{
+  background: #fff;
+}
+
+#disciplinas, #cursos{
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #000;
+  height: 36px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 36px;
+  vertical-align: middle;
+  background: white;
+  border-bottom: solid .1px;
+  border-color: #9e9e9e;
+}
+
+.mdl-layout__header.is-compact {
+  max-height: 90px !important;
 }
