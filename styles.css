@@ -30,7 +30,7 @@
 
 .portfolio-logo {
   background: url(images/logo.png) 50% no-repeat;
-  background-size: cover;
+  background-size: contain;
   height: 150px;
   width: 150px;
   margin: auto auto 10px;
@@ -41,7 +41,6 @@
   width: 50px;
   margin-top: 7px;
 }
-
 .portfolio-navigation-row {
   background-color: rgba(0, 0, 0, 0.08);
   text-transform: uppercase;
@@ -168,3 +167,126 @@ footer {
   background-size: cover;
 }
 
+.mdl-card__supporting-text{
+  color: rgba(0,0,0,.54);
+  font-size: 1rem;
+  line-height: 18px;
+  overflow: hidden;
+  padding: 16px;
+  height: 70%;
+  width: 90%;
+}
+
+.tituloCursos{
+  margin: auto;
+  font-size: 20px;
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+}
+
+.mdl-list__item{
+  box-sizing: border-box;
+  background: rgb(234, 234, 234);
+}
+.mdl-list__item:nth-child(odd) { 
+  box-sizing: border-box;
+  background: rgb(241, 241, 241); 
+}
+
+.collapsible {
+  background-color: #F8F8FF;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #9e9e9e
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: #126c9c;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+#options{
+  grid-template-columns: 50% 1fr;
+  display: inline-grid;
+  grid-gap: 1px;
+}
+
+.mdl-button {
+    background: 0 0;
+    border: none;
+    border-radius: 2px;
+    color: #000;
+    position: relative;
+    height: 36px;
+    margin: 0;
+    width: 100%;
+    min-width: 64px;
+    display: inline;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    overflow: hidden;
+    will-change: box-shadow;
+    transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    line-height: 36px;
+    vertical-align: middle;
+}
+
+.options{
+  text-decoration: none;
+  background: #b0b0b0;
+}
+
+#disciplinasButton:hover, #cursosButton:hover{
+  background: #fff;
+}
+
+#disciplinas, #cursos{
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #000;
+  height: 36px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 36px;
+  vertical-align: middle;
+  background: white;
+  border-bottom: solid .1px;
+  border-color: #9e9e9e;
+}
+
+.mdl-layout__header.is-compact {
+  max-height: 90px !important;
+}
