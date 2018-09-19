@@ -90,6 +90,7 @@
 
 .portfolio-card .mdl-card__title {
   padding-bottom: 0;
+  height: 20%;
 }
 
 .portfolio-blog-card-full-bg {
@@ -338,4 +339,34 @@ a.mdl-navigation__link:hover {
   background-color: #005d8e;
   will-change: box-shadow;
   transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
+}
+
+.mdl-list__item {
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: .04em;
+  line-height: 1;
+  min-height: 48px;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding: 0px;
+  cursor: default;
+  color: rgba(0,0,0,.87);
+  overflow: hidden;
+}
+.mdl-card__title-text{
+  margin: auto;
+  font-size: 20px;
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  text-align: center;
+  font-weight: 400;
+}
+
+.mdl-card__title{
+  border-bottom: 1px solid rgba(0,0,0,.1);
 }
